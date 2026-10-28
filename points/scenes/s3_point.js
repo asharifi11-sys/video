@@ -10,6 +10,7 @@ MOTION.scene({
     const g = c.getContext('2d'); g.fillStyle = '#fff'; g.fillRect(0, 0, 1024, 1024);
     J.stamp(ctx, g, 512, 512, 512, { shadow: false });
     const tex = new THREE.CanvasTexture(c); tex.colorSpace = THREE.SRGBColorSpace; tex.anisotropy = 8;
+    tex.center.set(0.5, 0.5); tex.rotation = Math.PI / 2;   // وجه الأسطوانة يقلب الصورة — نرجّعها
     const side = new THREE.MeshBasicMaterial({ color: '#D9D9E3' }), face = new THREE.MeshBasicMaterial({ map: tex });
     this.coin = new THREE.Mesh(new THREE.CylinderGeometry(1.1, 1.1, 0.2, 96), [side, face, face]);
     this.st.add(this.coin);

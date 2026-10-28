@@ -76,7 +76,7 @@ J.coupon = function (ctx, X, front) {
   const w = 300, h = 150;
   X.fillStyle = J.DARK; X.globalAlpha *= 1; X.beginPath(); X.roundRect(-w / 2 + 8, -h / 2 + 10, w, h, 16); X.fill();
   X.fillStyle = '#fff'; X.beginPath(); X.roundRect(-w / 2, -h / 2, w, h, 16); X.fill();
-  X.fillStyle = J.BLUE; X.beginPath(); X.arc(-w / 2, 0, 18, -Math.PI / 2, Math.PI / 2); X.arc(w / 2, 0, 18, Math.PI / 2, Math.PI * 1.5); X.fill();
+  X.fillStyle = J.BLUE; X.beginPath(); X.arc(-w / 2, 0, 18, -Math.PI / 2, Math.PI / 2); X.fill(); X.beginPath(); X.arc(w / 2, 0, 18, Math.PI / 2, Math.PI * 1.5); X.fill();
   if (!front) return;
   X.strokeStyle = J.BLUE; X.lineWidth = 3; X.setLineDash([8, 7]); X.beginPath(); X.moveTo(-60, -h / 2 + 12); X.lineTo(-60, h / 2 - 12); X.stroke(); X.setLineDash([]);
   X.fillStyle = J.BLUE; X.beginPath(); X.arc(-100, -14, 30, 0, 6.2832); X.fill();
