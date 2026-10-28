@@ -1,0 +1,18 @@
+{
+  "name": "جامبو — كل دينار = نقطة",
+  "fps": 60, "width": 1080, "height": 1920,
+  "bpm": 120, "beatsPerBar": 4, "beatOffset": 0,
+  "palette": { "bg": "#0049C9", "ink": "#FFFFFF", "acc": "#EF3B2D", "clay": "#0A2E8A", "hi": "#C9D8F5", "mut": "#A9C0F0" },
+  "fonts": { "display": "Cairo", "body": "IBM Plex Sans Arabic", "num": "Inter" },
+  "images": { "note": "assets/note.png", "emblem": "assets/emblem_white.png", "tikka": "assets/tikka.png", "tissue": "assets/tissue.png", "coffee": "assets/coffee.png" },
+  "post": { "grain": 0.025, "vignette": 0 },
+  "scenes": [
+    { "id": "s1", "file": "scenes/s1_hook.js" },
+    { "id": "s2", "file": "scenes/s2_items.js", "transition": { "type": "wipe", "dur": 0.4, "dir": "rtl", "bar": 40, "color": "#EF3B2D" } },
+    { "id": "s3", "file": "scenes/s3_point.js", "transition": { "type": "zoom", "dur": 0.4 } },
+    { "id": "s4", "file": "scenes/s4_cashier.js", "transition": { "type": "wipe", "dur": 0.4, "dir": "up", "bar": 40, "color": "#EF3B2D" } },
+    { "id": "s5", "file": "scenes/s5_prizes.js", "transition": { "type": "iris", "dur": 0.5, "at": [540, 900] } },
+    { "id": "s6", "file": "scenes/s6_draw.js", "transition": { "type": "push", "dur": 0.4, "dir": "up" } },
+    { "id": "s7", "file": "scenes/s7_end.js", "transition": { "type": "iris", "dur": 0.5, "at": [540, 820] } }
+  ]
+}
